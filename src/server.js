@@ -11,26 +11,26 @@ const app = express();
 const parsePgServer = new ParseServer({
   databaseURI: PARSE_CONFIG.DATABASE_URL,
   appId: PARSE_CONFIG.APP_ID,
-  serverURL: `http://localhost:${PARSE_CONFIG.PORT}/pg`,
+  serverURL: `${PARSE_CONFIG.SERVER_URL}/pg`,
   masterKey: PARSE_CONFIG.MASTER_KEY
 });
 const parseMongoServer = new ParseServer({
   databaseURI: PARSE_CONFIG.MONGODB_URI,
   appId: PARSE_CONFIG.APP_ID,
-  serverURL: `http://localhost:${PARSE_CONFIG.PORT}/mongo`,
+  serverURL: `${PARSE_CONFIG.SERVER_URL}/mongo`,
   masterKey: PARSE_CONFIG.MASTER_KEY
 });
 
 const parseDashboard = new ParseDashboard({
   apps: [
     {
-      serverURL: `http://localhost:${PARSE_CONFIG.PORT}/pg`,
+      serverURL: `${PARSE_CONFIG.SERVER_URL}/pg`,
       appId: PARSE_CONFIG.APP_ID,
       masterKey: PARSE_CONFIG.MASTER_KEY,
       appName: PARSE_CONFIG.APP_NAME + ' PostgreSQL'
     },
     {
-      serverURL: `http://localhost:${PARSE_CONFIG.PORT}/mongo`,
+      serverURL: `${PARSE_CONFIG.SERVER_URL}/mongo`,
       appId: PARSE_CONFIG.APP_ID,
       masterKey: PARSE_CONFIG.MASTER_KEY,
       appName: PARSE_CONFIG.APP_NAME + ' MongoDB'
