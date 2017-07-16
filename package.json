@@ -1,0 +1,20 @@
+{
+  "name": "parse-heroku-postgres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "parse-dashboard": "^1.1.0",
+    "parse-server": "^2.5.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.2.0"
+  }
+}

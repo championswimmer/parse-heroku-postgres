@@ -1,0 +1,12 @@
+==== postgres benchmark create ====
+
+real	0m13.509s
+user	0m3.549s
+sys	    0m2.964s
+  = = = = =  = =  = = = = = = = = =  
+==== postgres benchmark get(where)==== 
+
+real	0m12.839s
+user	0m3.439s
+sys	    0m2.939s
+  = = = = =  = =  = = = = =  = = = =  
