@@ -36,6 +36,10 @@ const parseDashboard = new ParseDashboard({
       appName: PARSE_CONFIG.APP_NAME + ' MongoDB'
     }
   ],
+  users: [
+    {user: 'parse', pass: '$2y$10$k00HQT0vCcwQIpi12FYVcuMi.vd.puICn0CjL31s3wooWqFVvtz12'}
+  ],
+  useEncryptedPasswords: true,
   trustProxy: 1
 });
 
